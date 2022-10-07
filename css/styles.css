@@ -151,8 +151,8 @@ img{
 .conection{
     margin-left: auto;
     /* padding: 32px 0; */
-
-    display: flex;
+    display:flex;
+    align-items: center;
 
 }
 
@@ -163,6 +163,28 @@ img{
 
 .conection-item{
     padding: 32px 0;
+}
+
+.conection-item::before{
+    content:"";
+
+    background-repeat: no-repeat;
+    
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.icon-envelope::before{
+    width: 16px;
+    height: 12px;
+    background-image: url('../images/envelope.svg');
+}
+
+.icon-tel::before{
+    width: 10px;
+    height: 16px;
+    background-image: url("../images/smartphone.svg");
 }
 
 .conection-link{
@@ -180,8 +202,18 @@ img{
 
 .hero{
     padding: 200px 0;
+    max-width: 1600px;
+
 
     background-color: #2F303A;
+    background-image:linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/background.jpg);
+
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-title{
@@ -243,6 +275,37 @@ img{
 .peculirities-item{
     /* max-width: 270px; */
     flex-basis: calc((100% - 90px) / 4);
+}
+
+.peculirities-item::before{
+    content: "";
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+}
+
+.icon-antena::before{
+    background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before{
+ background-image: url(../images/clock.svg);
+
+}
+
+.icon-diagram::before{
+    background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before{
+    background-image: url(../images/astronaut.svg);
 }
 
 .peculirities-title{
@@ -311,6 +374,14 @@ img{
     margin-bottom: 50px;
 }
 
+.team-item{
+    background-color: #fff;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+
 .team-title{
     margin-top: 30px;
     margin-bottom: 10px;
@@ -324,7 +395,8 @@ img{
 }
 
 .profession-text{
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
+    margin-bottom: 16px;
     text-align: center;
 
     font-size: 16px;
