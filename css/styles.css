@@ -168,29 +168,17 @@ img{
 
 .conection-link{
     padding: 32px 0;
+   
 }
 
-.conection-item::before{
-    content:"";
+ .conection-item{
+    fill: var(--text-color);
+    align-items: center;
+ }
 
-    background-repeat: no-repeat;
-    
-    display: inline-block;
-    margin-right: 10px;
-
-}
-
-.icon-envelope::before{
-    width: 16px;
-    height: 12px;
-    background-image: url('../images/envelope.svg');
-}
-
-.icon-tel::before{
-    width: 10px;
-    height: 16px;
-    background-image: url("../images/smartphone.svg");
-}
+ .conection-item:hover{
+    fill: var(--accent-color);
+ }
 
 .conection-link{
     padding: 32px 0;
@@ -217,6 +205,7 @@ img{
     rgba(47, 48, 58, 0.4)), 
     url(../images/background.jpg);
 
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -282,8 +271,7 @@ img{
     flex-basis: calc((100% - 90px) / 4);
 }
 
-.peculirities-item::before{
-    content: "";
+.peculirities-icon{
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
@@ -296,22 +284,8 @@ img{
 
 }
 
-.icon-antena::before{
-    background-image: url(../images/antenna.svg);
-}
 
-.icon-clock::before{
- background-image: url(../images/clock.svg);
 
-}
-
-.icon-diagram::before{
-    background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before{
-    background-image: url(../images/astronaut.svg);
-}
 
 .peculirities-title{
     margin-bottom: 10px;
@@ -410,30 +384,53 @@ img{
     color: var(--text-color);
 }
 
+
+/* icon */
+
 .icon-list{
     display: flex;
     justify-content: center;
+
+    padding: 0 32px 30px 32px;
 }
 
-.team-icon-link{
-    fill:#AFB1B8;
-    background-color: #fff;
-    border-radius: 50%;
-    
-   
-    display: inline-block;
-
+.social-item {
     width: 44px;
     height: 44px;
+}
+
+.social-item + .social-item {
+    margin-left: 10px;
+}
+
+
+
+.team-icon-link{
+    width: 100%;
+    height: 100%;
+
+    fill:#AFB1B8;
+    background-color: #fff;
+
+    border-radius: 50%;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 
-.team-icon-link:hover{
+
+.team-icon-link:hover,
+.team-icon-link:focus{
     fill: #ffffff;
     background-color: var(--accent-color) ;
 }
 
 .icon-link{
+    /* fill: #AFB1B8; */
+
     width: 20px;
     height: 20px;
 }
