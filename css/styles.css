@@ -166,24 +166,39 @@ img{
 
 }
 
-
-
- 
-.conection-icon-link{
-    fill: var(--text-color);
-   
-    width: 100%;
-    height: 100%;
+/* .conection-item{
     
+    display: flex;
+    align-items:center;
+    justify-content: center;
+} */
+
+.conection-item{
+    display: block;
     align-items: center;
     justify-content: center;
 }
 
- .conection-icon-link:hover {
+
+.icon-link-header{
+    width: 100%;
+    height: 100%;
+    fill: #757575;
+}
+
+.icon-link-header:hover,
+.icon-link-header:focus{
     fill: var(--accent-color);
- }
+}
+
+
+.icon-conection{
+    display: block;
+}
+
 
 .conection-link{
+    margin-left: 10px;
     padding: 32px 0;
 
     font-family: inherit;
@@ -438,12 +453,12 @@ img{
     background-color: var(--accent-color) ;
 }
 
-.icon-link{
-    /* fill: #AFB1B8; */
+/* .icon-link{
+    fill: #AFB1B8; 
 
     width: 20px;
     height: 20px;
-}
+ } */
 
 /* Client */
 
@@ -491,8 +506,8 @@ img{
 }
 
 .icon-client{
-    width: 106px;
-    height: 60px;
+    /* width: 106px;
+    height: 60px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -505,6 +520,7 @@ address{
 
 .page-footer{
     padding: 60px 0;
+    
 
     background-color: #2F303A;
 }
@@ -540,7 +556,67 @@ address{
     color: var(--footer-text-color);
 }
 
-  /*             Portfolio              */
+.footer-left-part{
+    display: flex;
+    align-items: baseline;
+}
+
+/* Join */
+
+.join {
+    margin-left: 70px;
+}
+
+
+.title-join {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    margin-bottom: 20px;
+}
+
+.join-list {
+    display: flex;
+}
+
+.join-item {
+    width: 44px;
+    height: 44px;
+}
+
+.join-item + .join-item {
+    margin-left: 10px;
+}
+
+.join-icon-link {
+    width: 100%;
+    height: 100%;
+
+    fill: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-icon-link:hover,
+.join-icon-link:focus {
+    background-color: var(--accent-color);
+}
+
+
+/* .join-icon {
+    width: 20px;
+    height: 20px;
+} */
+
+                         /*             Portfolio              */           
 
 .section-exampeles{
     padding-top: 94px;
@@ -609,6 +685,9 @@ address{
 
     margin-left: 30px;
     margin-bottom: 30px;
+
+    outline: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-content{
@@ -633,61 +712,4 @@ address{
     color: var(--text-color);
 }
 
-/* Join */
 
-.join{
-    padding-top: 72px;
-    padding-bottom: 100px;
-    padding-left: 70px;
-}
-.footer-container{
-    display: flex;
-}
-
-.title-join{
-    font-size: 14px;
-    line-height:1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #ffffff;
-
-    margin-bottom: 20px;
-}
-
-.join-list{
-    display: flex;
-}
-
-.join-item{
-    width: 44px;
-    height: 44px;
-}
-
-.join-item + .join-item{
-    margin-left: 10px;
-}
-
-.join-icon-link{
-    width: 100%;
-    height: 100%;
-
-    fill:#ffffff;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.join-icon-link:hover,
-.join-icon-link:focus{
-    background-color: var(--accent-color);
-}
-
-
-.join-icon{
-    width: 20px;
-    height: 20px;
-}
