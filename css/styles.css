@@ -180,11 +180,11 @@ img{
 }
 
 
-.icon-link-header{
+/* .icon-link-header{
     width: 100%;
     height: 100%;
     fill: #757575;
-}
+} */
 
 .icon-link-header:hover,
 .icon-link-header:focus{
@@ -193,7 +193,13 @@ img{
 
 
 .icon-conection{
-    display: block;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.icon-conection:hover,
+.icon-conection:focus{
+    fill: var(--accent-color);
 }
 
 
@@ -206,6 +212,11 @@ img{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
