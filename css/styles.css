@@ -274,7 +274,7 @@ img{
     background-color: var(--accent-color);
 
     display: block;
-    padding: 8px 32px;
+    padding: 8px 30px;
     min-width: 200px;
     border-radius: 4px;
     border-color: transparent;
