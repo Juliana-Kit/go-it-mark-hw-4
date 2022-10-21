@@ -225,6 +225,7 @@ img{
 .hero{
     padding: 200px 0;
     max-width: 1600px;
+    margin: 0 auto;
     
 
 
@@ -253,7 +254,7 @@ img{
 
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.4;
+    line-height:calc(60/44);
     letter-spacing: 0.06em;
 
     text-align: center;
@@ -265,7 +266,7 @@ img{
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: calc(30/16);
     letter-spacing: 0.06em;
     cursor: pointer;
 
@@ -273,7 +274,7 @@ img{
     background-color: var(--accent-color);
 
     display: block;
-    padding: 10px 32px;
+    padding: 8px 32px;
     min-width: 200px;
     border-radius: 4px;
     border-color: transparent;
